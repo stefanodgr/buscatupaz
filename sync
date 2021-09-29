@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rsync -aP baselangweb-v2-nextgen-staging:/root/baselang_dbapp.sql ~
+mysql baselang_dbapp < ~/baselang_dbapp.sql
